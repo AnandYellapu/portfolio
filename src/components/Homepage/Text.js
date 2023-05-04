@@ -27,7 +27,7 @@ function Text() {
           typewriterRef.current = typewriter;
         }}
       />
-      <button onClick={handleClick} className="typewriter-btn">Stop Typing</button>
+      <button onClick={handleClick} className="typewriter-btn">Typing</button>
     </div>
   )
 }
