@@ -145,7 +145,7 @@ opacity: 1;
     
     .navbar-toggler:not(.collapsed) span:nth-child(2) {
     height: 12px;
-    visibility: hidden;
+    visibility: visible;
     background-color: transparent;
     }
     
