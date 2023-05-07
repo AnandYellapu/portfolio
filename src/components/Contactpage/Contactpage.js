@@ -11,7 +11,7 @@ function Contactpage() {
         <button
           className='contactbtn'
           onClick={() => {
-            window.open("https://mail.google.com/mail/u/0/#sent?compose=VpCqJKjvlsdDrLLbdRkPxpfLKbPPnwBtcLgzcQhThBSsDHWhXrhwMpdghBCZdcvtGVwFhVl");
+            window.open("mailto:anandsaiii1200@outlook.com");
           }}
         >Say Hello</button> 
         <span></span>
