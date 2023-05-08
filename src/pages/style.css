@@ -82,6 +82,8 @@
 }
 
 .nav-link:hover {
+  transform: translateY(-5px);
+  transition: 5ms; 
   color: red !important;
 }
 
@@ -229,8 +231,11 @@
   height: 100%;
   padding: 1rem;
   background-color: transparent;
-  border-radius: 15px;
+  border-radius: 16px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px !important;
+}
+.textbackground:hover {
+  transform: scale(0.9);
 }
 .aboutmetext {
   font-size: 2em !important;
@@ -247,14 +252,7 @@
 .webimage:hover {
   transform: scale(1.1);
 }
-@keyframes vibrate {
-  0% {
-    transform: translateX(-1px) translateY(1px);
-  }
-  100% {
-    transform: translateX(1px) translateY(-2px);
-  }
-}
+
 .aboutdetails {
   font-size: 1.1em !important;
   font-family: 'Poppins';
@@ -275,6 +273,7 @@
 }
 .webimage {
   max-width: 400px;
+  border-radius: 10px;
   height: 300px;
   background-image: url(../Assets/web.jpg);
   background-size: cover;
@@ -399,7 +398,7 @@
   letter-spacing: 2px;
 }
 .contactbtn:hover {
-  background-color: rgba(51, 51, 51, 0.2);
+  background-color: rgb(108, 126, 114);
 }
 .line {
   border:#040404;
