@@ -17,11 +17,11 @@ function Text() {
       <Typewriter
         options={{
           strings: [
-            "Full Stack Web Developer",
+            "Web Developer",
           ],
           autoStart: true,
           loop: true,
-          deleteSpeed: 10,
+          deleteSpeed: 30,
         }}
         onInit={(typewriter) => {
           typewriterRef.current = typewriter;
