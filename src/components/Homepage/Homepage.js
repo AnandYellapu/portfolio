@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import Text from '../Homepage/Text'
 import { VscGithub } from "react-icons/vsc"
 import { TfiTwitter } from "react-icons/tfi"
+// import {bi bi }
 import {RiInstagramFill} from "react-icons/ri";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -21,21 +22,23 @@ function Home() {
               window.open("https://github.com/AnandYellapu");
             }}
               className='socailmediabtn'><VscGithub className='icon' /></button>
+            
             <button onClick={() => {
               window.open("https://www.linkedin.com/in/yellapu-anandsai-38873b238/");
             }}
               className='socailmediabtn'><FaLinkedinIn className='icon' /></button>
+            
             <button onClick={() => {
               window.open("https://twitter.com/ianand1200");
             }}
-              className='socailmediabtn'><TfiTwitter className='icon' /></button>
+              className='socailmediabtn'><TfiTwitter className='icon'></TfiTwitter></button>
+            
             <button onClick={() => {
               window.open("https://www.instagram.com/nanduu1200/");
             }}
               className='socailmediabtn'><RiInstagramFill className='icon' /></button>
           </Col>
-
-          <Col md={5}>
+           <Col md={5}>
             <div className="imagedeveloper">
             </div>
           </Col>

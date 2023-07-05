@@ -17,17 +17,17 @@ function Text() {
       <Typewriter
         options={{
           strings: [
-            "Full Stack Web Developer",
+            "Web Developer", "Designer"
           ],
           autoStart: true,
           loop: true,
-          deleteSpeed: 10,
+          deleteSpeed: 30,
         }}
         onInit={(typewriter) => {
           typewriterRef.current = typewriter;
         }}
       />
-      <button onClick={handleClick} className="typewriter-btn">Stop Typing</button>
+      <button onClick={handleClick} className="typewriter-btn">Typing</button>
     </div>
   )
 }

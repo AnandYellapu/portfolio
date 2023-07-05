@@ -39,10 +39,9 @@ function Header() {
         expand="md"
         expanded={expand}
       >
-        <Navbar.Brand as={Link} to="/">
-          <div className="logo"></div>
-        </Navbar.Brand>
-        <Navbar.Toggle onClick={toggleExpand}>
+      <Navbar.Brand as={Link} to="/">
+    </Navbar.Brand>
+      <Navbar.Toggle onClick={toggleExpand}>
           <span></span>
           <span></span>
           <span></span>

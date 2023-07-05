@@ -10,19 +10,22 @@ function Aboutpage() {
                 <Row className='textbackground'>
                     <Col md={7} >
                         <h3 className='aboutmetext'>About <span>Me</span></h3>
-                        <p className='aboutdetails'>I'm a self-taught Front End developer from India. I build websites with a focus on providing the experience for everyone using them and responsiveness. Curious to learn more about developing scalable distribution systems, love problem solving, and care about writing and maintainable code. A responsive design makes your website accessible to all users, regardless of their devices.
+                        <p className='aboutdetails'>I am a Front End developer based in India with a passion for building websites that provide an exceptional user experience. I am a self-taught developer who values writing maintainable code and enjoys problem-solving. My focus is on creating responsive designs that are accessible to all users, regardless of the device they use. Additionally, I am interested in learning more about developing scalable distribution systems to enhance my skills further.
                         </p>
                         <ul className='skilllist'>
                             <Row>
                                 <h3>Skills</h3>
                                 <Col md={7}>
-                                    <li>HTML5/CSS3</li>
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
                                     <li>JavaScript</li>
                                     <li>Bootstrap 5</li>
                                 </Col>
                                 <Col md={5}>
                                     <li>React Js</li>
-                                    <li>Redux Js</li>
+                                    <li>Node Js</li>
+                                    <li>Mongo DB</li>
+                                    <li>MySQL</li>
                                 </Col>
                             </Row>
                         </ul>

@@ -12,19 +12,9 @@ function ProjectCard(props) {
             {props.description}
           </Card.Text>
           <div className="d-flex justify-content-center">
-            <Button className="btn p-9" variant="primary" href={props.ghLink} target="_blank">
+            <Button className="btn p-2 m-3 h-5 w-100" variant="btn btn-outline-success" href={props.ghLink} target="_blank">
               View
             </Button>
-            {!props.isBlog && props.demoLink && (
-              <Button
-                variant="primary"
-                href={props.demoLink}
-                target="_blank"
-                style={{ marginLeft: "10px" }}
-              >
-                Demo
-              </Button>
-            )}
           </div>
         </Card.Body>
       </Card>

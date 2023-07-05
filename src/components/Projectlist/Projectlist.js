@@ -3,14 +3,14 @@ import '../../pages/style.css';
 import ProjectCard from "./ProjectCard";
 import { Container, Row, Col } from 'react-bootstrap'
 import crypto from '../../Assets/crypto.jpg'
-import nft from '../../Assets/nft.jpg'
+import food from '../../Assets/food.png'
 
 function Projectlist() {
   return (
     <div className="projectbackground">
       <Container fluid className="dash-section">
         <Container>
-          <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Row style={{ justifyContent: "center", paddingBottom: "40px", marginTop:"57px" }}>
             <Col md={4} className="dash-card">
               <ProjectCard
                 imgPath={crypto}
@@ -23,11 +23,11 @@ function Projectlist() {
 
             <Col md={4} className="dash-card">
               <ProjectCard
-                imgPath={nft}
+                imgPath={food}
                 isBlog={false}
-                title="Nft"
-                description="An NFT (Non-Fungible Token) exchange is a platform that allows users to buy, sell, and trade NFTs. NFTs are unique digital assets that are verified on a blockchain, which means they cannot be replicated or duplicated. NFT exchanges provide a marketplace for artists, collectors."
-                ghLink="https://react-nft99.netlify.app/"
+                title="Food Recipe"
+                description="Flavorful Eats is a delightful and user-friendly food recipe app designed to inspire both novice and seasoned cooks to explore new flavors and create delicious meals. Whether you're a passionate home cook or a busy professional looking for quick and easy recipes, Flavorful Eats has you covered."
+                ghLink="https://kitchen-recipe-management1.netlify.app/"
               />
             </Col>
           </Row>
