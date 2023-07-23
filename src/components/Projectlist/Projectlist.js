@@ -30,6 +30,16 @@ function Projectlist() {
                 ghLink="https://kitchen-recipe-management1.netlify.app/"
               />
             </Col>
+
+                  <Col md={4} className="dash-card">
+              <ProjectCard
+                imgPath={food}
+                isBlog={false}
+                title="URL SHORTENER"
+                description="A URL shortener is a web service or application that converts long and cumbersome URLs (Uniform Resource Locators) into shorter and more manageable ones. The primary purpose of a URL shortener is to create concise and shareable links that are easier to remember, share, and use."
+                ghLink="https://url-shorteneer.netlify.app"
+              />
+            </Col>
           </Row>
         </Container>
       </Container>
