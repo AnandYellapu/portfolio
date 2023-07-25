@@ -26,6 +26,7 @@ function Text() {
         onInit={(typewriter) => {
           typewriterRef.current = typewriter;
         }}
+        className="typewriter-text" // Add class name to the typewriter text
       />
       <button onClick={handleClick} className="typewriter-btn">Typing</button>
     </div>
@@ -33,4 +34,3 @@ function Text() {
 }
 
 export default Text;
-

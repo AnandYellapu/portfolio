@@ -1,9 +1,10 @@
 import React from 'react'
 import '../../pages/style.css';
 import ProjectCard from "./ProjectCard";
-import { Container, Row, Col } from 'react-bootstrap'
-import crypto from '../../Assets/crypto.jpg'
-import food from '../../Assets/food.png'
+import { Container, Row, Col } from 'react-bootstrap';
+import crypto from '../../Assets/crypto.jpg';
+import food from '../../Assets/food.png';
+import url from '../../Assets/url.png';
 
 function Projectlist() {
   return (

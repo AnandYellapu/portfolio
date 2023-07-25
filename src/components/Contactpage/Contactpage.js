@@ -29,4 +29,4 @@ If you're interested in learning more about my experience and skills, feel free 
   )
 }
 
-export default Contactpage
+export default Contactpage;
