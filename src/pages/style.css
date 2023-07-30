@@ -1,9 +1,15 @@
  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+ body {
+   margin: 0;
+   padding: 0;
+   background: #e74c3c;
+   font-family: 'Lato', sans-serif;
+ }
 
- .homebg-ground {
-  background-color: #adf7d1;
+.homebg-ground {
   padding: 205px 0;
+background-color: #adf7d1;
 }
 
 .headtext {
@@ -18,13 +24,11 @@
   color: salmon;
 }
 
-/* Underline */
 .underline {
   display: block;
   width: 50px;
   height: 4px;
   background-color: #007bff;
-  /* Blue color for the underline */
   margin-bottom: 20px;
 }
 
@@ -40,29 +44,39 @@
   margin-right: 10px;
   outline: none;
   transition: all 0.3s ease;
-  /* Add smooth transition effect */
   transform-origin: center;
   position: relative;
 }
 
-.icon {
+/* Icon colors */
+.github-color {
+  color: #000000;
   font-size: 24px;
-  color: #333;
 }
 
-/* Social Media Buttons Hover Effects */
+.linkedin-color {
+  color: #0077B5;
+  font-size: 24px;
+}
+
+.twitter-color {
+  color: #1DA1F2;
+  font-size: 24px;
+}
+
+.instagram-color {
+  color: #E4405F;
+  font-size: 24px;
+}
+
+
 .social-media-btn:hover .icon {
-  color: salmon;
-  /* Blue color on hover */
   transform: scale(1.2);
-  /* Scale up the icon on hover */
 }
 
 .social-media-btn:hover {
   transform: translateY(-5px);
-  /* Move up slightly on hover */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Add subtle box shadow on hover */
 }
 
 /* Bouncing Animation on Hover */
@@ -98,15 +112,14 @@
   }
 }
 
-/* Social Media Buttons Click Effects */
+
 .social-media-btn:active .icon {
   color: #fff;
-  /* Change icon color on click */
+ 
 }
 
 .social-media-btn:active:after {
   background-color: #fff;
-  /* Change bouncing element color on click */
 }
 
 /* Developer Image */
@@ -128,7 +141,7 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Animation */
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -141,14 +154,12 @@
   }
 }
 
-/* Apply the fadeInUp animation to the main content */
 .homebg-ground,
 .social-media-buttons,
 .imagedeveloper {
   animation: fadeInUp 1s ease;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .nametext {
     font-size: 36px;
@@ -195,9 +206,6 @@
 
 
 
-
-
-
 .navbar {
   background-color: transparent;
   transition: background-color 0.3s ease;
@@ -225,8 +233,6 @@
   text-align: center;
 }
 
-
-
 .nav-link {
   color: black;
   font-size: 18px;
@@ -237,7 +243,7 @@
 }
 
 .nav-link:hover {
-  color: #007bff;
+  color: salmon !important;
 }
 
 
@@ -248,11 +254,24 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #007bff;
+  background-color: salmon;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
 }
+
+.nav-link {
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-link.slide-in {
+  transform: translateX(0);
+}
+
+.nav-link.slide-out {
+  transform: translateX(100%);
+}
+
 
 .nav-link:hover::before {
   transform: scaleX(1);
@@ -262,7 +281,6 @@
 .nav-link.active::before {
   transform: scaleX(1);
 }
-
 
 @keyframes fadeIn {
   from {
@@ -327,10 +345,7 @@
   .nav-link.active::before {
     width: 100%;
   }
-}
-
-
-
+} 
 
 
 .aboutpagebackground {

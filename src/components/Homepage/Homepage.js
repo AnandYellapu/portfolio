@@ -18,28 +18,40 @@ function Home() {
             <span className="underline"></span>
             <Text />
             <div className="social-media-buttons">
-              <button onClick={() => {
-                window.open("https://github.com/AnandYellapu");
-              }} className='social-media-btn'>
-                <VscGithub className='icon' />
+              <button
+                onClick={() => {
+                  window.open("https://github.com/AnandYellapu");
+                }}
+                className='social-media-btn'
+              >
+                <VscGithub className='icon github-color' />
               </button>
 
-              <button onClick={() => {
-                window.open("https://www.linkedin.com/in/yellapu-anandsai-38873b238/");
-              }} className='social-media-btn'>
-                <FaLinkedinIn className='icon' />
+              <button
+                onClick={() => {
+                  window.open("https://www.linkedin.com/in/yellapu-anandsai-38873b238/");
+                }}
+                className='social-media-btn'
+              >
+                <FaLinkedinIn className='icon linkedin-color' />
               </button>
 
-              <button onClick={() => {
-                window.open("https://twitter.com/ianand1200");
-              }} className='social-media-btn'>
-                <TfiTwitter className='icon' />
+              <button
+                onClick={() => {
+                  window.open("https://twitter.com/ianand1200");
+                }}
+                className='social-media-btn'
+              >
+                <TfiTwitter className='icon twitter-color' />
               </button>
 
-              <button onClick={() => {
-                window.open("https://www.instagram.com/nanduu1200/");
-              }} className='social-media-btn'>
-                <RiInstagramFill className='icon' />
+              <button
+                onClick={() => {
+                  window.open("https://www.instagram.com/nanduu1200/");
+                }}
+                className='social-media-btn'
+              >
+                <RiInstagramFill className='icon instagram-color' />
               </button>
             </div>
           </Col>
@@ -50,7 +62,7 @@ function Home() {
         </Row>
       </Container>
     </div>
-  )
+  );
 }
 
 export default Home;
