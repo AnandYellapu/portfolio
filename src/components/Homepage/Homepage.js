@@ -3,8 +3,8 @@ import '../../pages/style.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import Text from '../Homepage/Text';
 import { VscGithub } from "react-icons/vsc";
-import { TfiTwitter } from "react-icons/tfi";
-import { RiInstagramFill } from "react-icons/ri";
+// import { TfiTwitter } from "react-icons/tfi";
+// import { RiInstagramFill } from "react-icons/ri";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home() {
@@ -36,23 +36,7 @@ function Home() {
                 <FaLinkedinIn className='icon linkedin-color' />
               </button>
 
-              <button
-                onClick={() => {
-                  window.open("https://twitter.com/ianand1200");
-                }}
-                className='social-media-btn'
-              >
-                <TfiTwitter className='icon twitter-color' />
-              </button>
-
-              <button
-                onClick={() => {
-                  window.open("https://www.instagram.com/nanduu1200/");
-                }}
-                className='social-media-btn'
-              >
-                <RiInstagramFill className='icon instagram-color' />
-              </button>
+              
             </div>
           </Col>
           <Col md={5}>

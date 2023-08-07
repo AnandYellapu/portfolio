@@ -1,6 +1,9 @@
 import React from 'react';
 import '../../pages/style.css';
 import { Container, Row, Col } from 'react-bootstrap';
+import { FaHtml5, FaCss3Alt, FaJs, FaBootstrap } from 'react-icons/fa'; // Import icons from React Icons
+import { SiReact, SiMongodb, SiMysql } from 'react-icons/si'; // Import more icons
+import { DiNodejs } from 'react-icons/di';
 
 function Aboutpage() {
   return (
@@ -18,16 +21,32 @@ function Aboutpage() {
               <Row>
                 <h3>Skills</h3>
                 <Col md={7}>
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                  <li>JavaScript</li>
-                  <li>Bootstrap 5</li>
+                  <li>
+                    <FaHtml5 className='icon-html' /> HTML5
+                  </li>
+                  <li>
+                    <FaCss3Alt className='icon-css' /> CSS3
+                  </li>
+                  <li>
+                    <FaJs className='icon-js' /> JavaScript
+                  </li>
+                  <li>
+                    <FaBootstrap className='icon-bootstrap' /> Bootstrap 5
+                  </li>
                 </Col>
                 <Col md={5}>
-                  <li>React Js</li>
-                  <li>Node Js</li>
-                  <li>Mongo DB</li>
-                  <li>MySQL</li>
+                  <li>
+                    <SiReact className='icon-react' /> React Js
+                  </li>
+                  <li>
+                    <DiNodejs className='icon-node' /> Node Js
+                  </li>
+                  <li>
+                    <SiMongodb className='icon-mongodb' /> Mongo DB
+                  </li>
+                  <li>
+                    <SiMysql className='icon-mysql' /> MySQL
+                  </li>
                 </Col>
               </Row>
             </ul>

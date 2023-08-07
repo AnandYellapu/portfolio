@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Link } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 import '../../pages/style.css';
 
 function Header() {
@@ -32,6 +33,8 @@ function Header() {
     setExpand(false);
   };
 
+  const googleDriveResumeLink = 'https://drive.google.com/file/d/1DDQyt8NPvm9krlI6Q1UrYOb3MAvFj3Mx/view';
+
   return (
     <Navbar
       className={navColour ? 'sticky' : 'navbar'}
@@ -40,7 +43,6 @@ function Header() {
       expanded={expand}
     >
       <Navbar.Brand as={Link} to="/">
-        {/* Add logo or brand content here */}
       </Navbar.Brand>
       <Navbar.Toggle onClick={toggleExpand}>
         <span></span>
@@ -68,6 +70,18 @@ function Header() {
             <Nav.Link as={Link} to="/contact" onClick={closeExpand}>
               Contact
             </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Button
+              className="view-resume-button11"
+              variant="primary"
+              href={googleDriveResumeLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={closeExpand}
+            >
+              Resume
+            </Button>
           </Nav.Item>
         </Nav>
       </Navbar.Collapse>

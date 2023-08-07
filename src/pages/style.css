@@ -9,7 +9,8 @@
 
 .homebg-ground {
   padding: 205px 0;
-background-color: #adf7d1;
+/* background-color: #adf7d1; */
+background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
 }
 
 .headtext {
@@ -216,16 +217,17 @@ background-color: #adf7d1;
 .navbar-toggler {
   border: none;
   cursor: pointer;
-  background-color: transparent;
+  background-color: white;
   padding: 0;
   margin-right: 15px;
 }
 
 .navbar-toggler span {
   display: block;
+  text-align: center;
   width: 30px;
   height: 3px;
-  background-color: #fff;
+  background-color: navy;
   margin-bottom: 5px;
 }
 
@@ -240,6 +242,7 @@ background-color: #adf7d1;
   text-decoration: none;
   transition: color 0.3s ease, transform 0.2s ease;
   position: relative;
+  margin: 0 5px;
 }
 
 .nav-link:hover {
@@ -303,8 +306,24 @@ background-color: #adf7d1;
   position: relative;
   max-height: 500px;
   overflow-y: auto;
+  display: flex;
+  align-items: center;
 }
 
+
+.view-resume-button11 {
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: normal;
+  transition: background-color 0.3s ease;
+  margin: 0 5px;
+
+}
+
+.view-resume-button11:hover {
+  background-color: #0056b3 !important;
+}
 
 @media (max-width: 767px) {
   .navbar {
@@ -312,7 +331,7 @@ background-color: #adf7d1;
   }
 
   .navbar-toggler {
-    margin-right: 0;
+    margin-left: 0;
   }
 
   .navbar-collapse {
@@ -349,7 +368,9 @@ background-color: #adf7d1;
 
 
 .aboutpagebackground {
-  background-color:#f0d9da;
+  /* background-color:#f0d9da; */
+  /* background: linear-gradient(109.6deg, rgb(255, 221, 225) 11.2%, rgb(255, 255, 255) 92.2%); */
+  background: linear-gradient(88.8deg, rgb(239, 171, 245) 13.4%, rgb(196, 181, 249) 76.3%);
   padding: 190px 0;
 }
 
@@ -382,8 +403,6 @@ background-color: #adf7d1;
 
 /* Aboutpage.css */
 
-/* ... (previous styles) */
-
 /* Skill list container */
 .skilllist {
   margin-top: 20px;
@@ -397,23 +416,66 @@ background-color: #adf7d1;
   margin-bottom: 10px;
 }
 
-/* Individual skill list item */
-.skilllist li {
+.icon-html {
+  color: #e34c26;
+  /* HTML5 color */
+}
+
+.icon-css {
+  color: #2965f1;
+  /* CSS3 color */
+}
+
+.icon-js {
+  color: #f0db4f;
+  /* JavaScript color */
+}
+
+.icon-bootstrap {
+  color: #7952b3;
+  /* Bootstrap color */
+}
+
+.icon-react {
+  color: #61dafb;
+  /* React color */
+}
+
+.icon-node {
+  color: #68a063;
+  /* Node.js color */
+}
+
+.icon-mongodb {
+  color: #47a248;
+  /* MongoDB color */
+}
+
+.icon-mysql {
+  color: #00758f;
+  /* MySQL color */
+}
+
+
+ .skilllist li {
+  font-size: 25px;
   list-style: none;
   margin-bottom: 5px;
   color: #555;
   cursor: pointer;
-  /* Add pointer cursor on hover */
   transition: color 0.3s ease;
-  /* Add smooth transition for link color */
-}
+} 
 
-.skilllist li:hover {
-  text-decoration:wavy;
-  color: red !important;
-  transform: scale(1.05);
-  font-weight: bold;
-
+.skilllist li:hover .icon-html,
+.skilllist li:hover .icon-css,
+.skilllist li:hover .icon-js,
+.skilllist li:hover .icon-bootstrap,
+.skilllist li:hover .icon-react,
+.skilllist li:hover .icon-node,
+.skilllist li:hover .icon-mongodb,
+.skilllist li:hover .icon-mysql {
+  transition: color 0.3s ease;
+  color: inherit;
 }
 
 @keyframes fadeIn {
@@ -454,7 +516,7 @@ background-color: #adf7d1;
 .projectbackground {
   width: 100%;
   height: 100%;
-  background-color: #c8d9eb;
+  /* background-color: #c8d9eb; */background: linear-gradient(45deg, #ee9ca7 0%, #ffdde1 100%);
 }
 
 .dash-section {
