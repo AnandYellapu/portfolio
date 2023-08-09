@@ -9,8 +9,8 @@
 
 .homebg-ground {
   padding: 205px 0;
-/* background-color: #adf7d1; */
-background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
+background-color: #adf7d1;
+/* background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%); */
 }
 
 .headtext {
@@ -47,6 +47,7 @@ background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 2
   transition: all 0.3s ease;
   transform-origin: center;
   position: relative;
+  margin-bottom: 25px;
 }
 
 /* Icon colors */
@@ -89,7 +90,6 @@ background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 2
   width: 8px;
   height: 8px;
   background-color: salmon;
-  /* Blue color for the bouncing element */
   border-radius: 50%;
   animation: bounce 0.8s infinite;
 }
@@ -122,6 +122,30 @@ background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 2
 .social-media-btn:active:after {
   background-color: #fff;
 }
+
+.view-resume-button {
+  background-color: salmon;
+  border-color: salmon;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.view-resume-button:hover {
+  background-color: #ff4949;
+  border-color: #ff4949;
+  transform: scale(1.05);
+}
+
+.view-resume-button:focus {
+  outline: none;
+}
+
 
 /* Developer Image */
 .imagedeveloper {
@@ -260,18 +284,6 @@ background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 2
   transform: translateY(-6px) rotate(-45deg);
 }
 
-
-.view-resume-button11 {
-  background-color: #007bff;
-  border-color: #007bff;
-  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.view-resume-button11:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
-  transform: scale(1.05);
-}
 
 /* Center navigation links when navbar is expanded (responsive) */
 .responsive-navbar {

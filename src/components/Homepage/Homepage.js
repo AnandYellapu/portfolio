@@ -3,11 +3,11 @@ import '../../pages/style.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import Text from '../Homepage/Text';
 import { VscGithub } from "react-icons/vsc";
-// import { TfiTwitter } from "react-icons/tfi";
-// import { RiInstagramFill } from "react-icons/ri";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home() {
+  const googleDriveResumeLink = 'https://drive.google.com/file/d/1DDQyt8NPvm9krlI6Q1UrYOb3MAvFj3Mx/view';
+
   return (
     <div className='homebg-ground'>
       <Container>
@@ -35,13 +35,18 @@ function Home() {
               >
                 <FaLinkedinIn className='icon linkedin-color' />
               </button>
-
-              
             </div>
+             <button
+              className="view-resume-button"
+              onClick={() => {
+                window.open(googleDriveResumeLink);
+              }}
+            >
+              View My Resume
+            </button>
           </Col>
           <Col md={5}>
-            <div className="imagedeveloper">
-            </div>
+            <div className="imagedeveloper"></div>
           </Col>
         </Row>
       </Container>

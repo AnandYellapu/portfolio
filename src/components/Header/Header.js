@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import '../../pages/style.css';
 
@@ -33,7 +32,6 @@ function Header() {
     setExpand(false);
   };
 
-  const googleDriveResumeLink = 'https://drive.google.com/file/d/1DDQyt8NPvm9krlI6Q1UrYOb3MAvFj3Mx/view';
 
   return (
     <Navbar
@@ -70,18 +68,6 @@ function Header() {
             <Nav.Link as={Link} to="/contact" onClick={closeExpand}>
               Contact
             </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Button
-              className="view-resume-button11"
-              variant="primary"
-              href={googleDriveResumeLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={closeExpand}
-            >
-              Resume
-            </Button>
           </Nav.Item>
         </Nav>
       </Navbar.Collapse>
