@@ -10,7 +10,6 @@
 .homebg-ground {
   padding: 205px 0;
 background-color: #adf7d1;
-/* background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%); */
 }
 
 .headtext {
@@ -682,7 +681,7 @@ background-color: #adf7d1;
   }
 }
 
-/* Apply pulsing animation to the button every 2 seconds */
+
 .contactbtn.pulse-animation {
   animation: pulse 2s infinite;
 }
@@ -800,12 +799,22 @@ span:hover {
    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
  }
 
- .vertical-timeline-element-date {
-   font-size: 1.1rem;
-   color: #666;
-   margin-bottom: 0.5rem;
 
- }
+
+.vertical-timeline-element-date {
+  font-size: 1.2rem important!;
+  color: black;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s, font-size 0.3s;
+
+}
+
+.vertical-timeline-element-date:hover {
+  font-size: 1.6rem;
+  color: #FF5733;
+  transform: rotate(10deg);
+  transition: transform 0.3s ease-in-out, color 0.3s, font-size 0.3s;
+}
 
 .vertical-timeline-element-title {
   font-size: 20px;

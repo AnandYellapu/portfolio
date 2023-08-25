@@ -1,28 +1,57 @@
-import React from 'react'
+import React from 'react';
+import { motion } from 'framer-motion';
 import '../../pages/style.css';
-import { Container } from 'react-bootstrap'
-import { GrLocationPin } from 'react-icons/gr'
+import { Container } from 'react-bootstrap';
+import { GrLocationPin } from 'react-icons/gr';
 
 function Contactpage() {
+  const backInRightAnimation = {
+    initial: { y: 500, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+    transition: { duration: 1.5, ease: 'backIn' },
+  };
+
   return (
     <div className='contactbg'>
       <Container>
-        <h2 className='contacthead'>Be In Touch</h2>
-        <p className='contactparagraph'> "Need a web developer? That's me! I'm ready to help with new websites or improvements. I can design, code, and more.Let's team up and make your web projects awesome!"
-</p>
-        <button
+        <motion.h2 className='contacthead' {...backInRightAnimation}>
+          Be In Touch
+        </motion.h2>
+        <motion.p className='contactparagraph' {...backInRightAnimation}>
+          "Need a web developer? That's me! I'm ready to help with new websites or improvements. I can design, code, and more.
+          Let's team up and make your web projects awesome!"
+        </motion.p>
+        <motion.button
           className='contactbtn'
           onClick={() => {
-            window.open("mailto:anandsaiii1200@gmail.com");
+            window.open('mailto:anandsaiii1200@gmail.com');
           }}
-        >Say Hello</button> 
-        <span></span>
-        <hr className='line' />
-        <p className='copyright'>
-          <GrLocationPin /> © 2023. <br /> Built by <span>@Anand</span></p>
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.9 }}
+          {...backInRightAnimation}
+        >
+          Say Hello
+        </motion.button>
+        <motion.div
+          className='line'
+          initial={{ scaleY: 0 }}
+          animate={{ scaleY: 1 }}
+          transition={{ duration: 1, delay: 1.5, ease: 'easeInOut' }}
+        />
+        <motion.p className='copyright'>
+          <GrLocationPin /> © 2023. <br />
+          Built by{' '}
+          <motion.span
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 1.7, ease: 'easeInOut' }}
+          >
+            @Anand
+          </motion.span>
+        </motion.p>
       </Container>
-      </div>
-  )
+    </div>
+  );
 }
 
 export default Contactpage;
