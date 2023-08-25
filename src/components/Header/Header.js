@@ -59,6 +59,15 @@ function Header() {
               About
             </Nav.Link>
           </Nav.Item>
+
+             
+          <Nav.Item>
+            <Nav.Link as={Link} to="/education" onClick={closeExpand}>
+              Qualification
+            </Nav.Link>
+          </Nav.Item>
+
+
           <Nav.Item>
             <Nav.Link as={Link} to="/project" onClick={closeExpand}>
               Projects

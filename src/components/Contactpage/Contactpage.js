@@ -8,7 +8,7 @@ function Contactpage() {
     <div className='contactbg'>
       <Container>
         <h2 className='contacthead'>Be In Touch</h2>
-        <p className='contactparagraph'> "Are you in search of a fresh and enthusiastic web developer to join your team? Your search ends here! As an aspiring web developer, I am eagerly seeking opportunities to apply my newly acquired skills. Whether you're looking to create a brand-new website or enhance an existing one, I'm excited to contribute. From crafting designs to coding and all that falls in between, count me in. If you're curious about my capabilities and experiences, please don't hesitate to reach out. I am keen on exploring new avenues and would greatly appreciate the chance to connect. Let's collaborate to breathe life into your web projects!"
+        <p className='contactparagraph'> "Need a web developer? That's me! I'm ready to help with new websites or improvements. I can design, code, and more.Let's team up and make your web projects awesome!"
 </p>
         <button
           className='contactbtn'
