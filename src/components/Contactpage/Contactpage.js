@@ -40,13 +40,13 @@ function Contactpage() {
         />
         <motion.p className='copyright'>
           <GrLocationPin /> © 2023. <br />
-          Built by{' '}
+          Built with React by{' '}
           <motion.span
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 1.7, ease: 'easeInOut' }}
           >
-            @Anand
+            Anand
           </motion.span>
         </motion.p>
       </Container>

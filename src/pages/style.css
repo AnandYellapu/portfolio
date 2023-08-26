@@ -1,4 +1,8 @@
  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+ @import 'animate.css';
+
+
+ 
 
  body {
    margin: 0;
@@ -30,6 +34,14 @@ background-color: #adf7d1;
   height: 4px;
   background-color: #007bff;
   margin-bottom: 20px;
+}
+
+
+.backInUp {
+  animation-name: backInUp;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
 }
 
 
@@ -313,145 +325,7 @@ background-color: #adf7d1;
   }
 }
 
-
-.aboutpagebackground {
-  /* background-color:#f0d9da; */
-  /* background: linear-gradient(109.6deg, rgb(255, 221, 225) 11.2%, rgb(255, 255, 255) 92.2%); */
-  background: linear-gradient(88.8deg, rgb(239, 171, 245) 13.4%, rgb(196, 181, 249) 76.3%);
-  padding: 190px 0;
-}
-
-
-.textbackground {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-
-.aboutmetext {
-  font-size: 28px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.aboutmetext span {
-  color: #007bff;
-}
-
-
-.aboutdetails {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.8;
-}
-
-/* Aboutpage.css */
-
-
- .skilllist {
-  margin-top: 20px;
-  font-size: 16px;
-}
-
-.skilllist h3 {
-  font-size: 22px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.icon-html {
-  color: #e34c26;
-}
-
-.icon-css {
-  color: #2965f1;
-}
-
-.icon-js {
-  color: #f0db4f;
-}
-
-.icon-bootstrap {
-  color: #7952b3;
-}
-
-.icon-react {
-  color: #61dafb;
-}
-
-.icon-node {
-  color: #68a063;
-}
-
-.icon-mongodb {
-  color: #47a248;
-}
-
-.icon-mysql {
-  color: #00758f; 
-}
-
-
- .skilllist li {
-  font-size: 25px;
-  list-style: none;
-  margin-bottom: 5px;
-  color: #555;
-  cursor: pointer;
-  transition: color 0.3s ease;
-} 
-
-.skilllist li:hover .icon-html,
-.skilllist li:hover .icon-css,
-.skilllist li:hover .icon-js,
-.skilllist li:hover .icon-bootstrap,
-.skilllist li:hover .icon-react,
-.skilllist li:hover .icon-node,
-.skilllist li:hover .icon-mongodb,
-.skilllist li:hover .icon-mysql {
-  transition: color 0.3s ease;
-  color: inherit;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.skilllist li {
-  animation: fadeIn 0.5s ease;
-}
-
-.webimage {
-  height: 300px;
-  background-image: url('../Assets/mern.jpg');
-  background-color: #007bff;
-  background-size: cover;
-  background-position: center;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-
-@media (max-width: 767px) {
-  .textbackground {
-    padding: 20px;
-  }
-} 
-
 /* Project Cards */
-
 
 .projectbackground {
   
@@ -735,7 +609,6 @@ span {
 
 .contactbg .container {
   animation: fadeIn 0.5s ease;
-  /* Apply fade-in animation for the contact section */
 }
 
 /* Horizontal Line */
@@ -943,107 +816,227 @@ span:hover {
  } 
 
 
+ /* Aboutpage.css */
+
+
+ .skilltitle {
+   margin-top: 50px;
+   text-align: center;
+ }
+
+ .text-center {
+   text-align: center;
+ }
+
+ .skillbox {
+   background-color: #f5f5f5;
+   border-radius: 8px;
+   padding: 20px;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+ }
+
+ @media (min-width: 768px) {
+
+   .skilltitle {
+     margin-top: 100px;
+   }
+
+   .skillbox {
+     padding: 30px;
+   }
+ }
+
+
+ .aboutpagebackground {
+background: linear-gradient(88.8deg, rgb(239, 171, 245) 13.4%, rgb(196, 181, 249) 76.3%);
+  padding: 190px 0;
+ }
+
+ .textbackground {
+   background-color: white;
+   padding: 30px;
+   border-radius: 8px;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+ }
+
+ .aboutmetext {
+   font-size: 28px;
+   margin-bottom: 20px;
+   font-family: "Arial", sans-serif;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+   line-height: 1.5;
+ }
+
+ .aboutmetext span {
+   color: #007bff;
+   font-weight: bold;
+   transition: color 0.3s ease-in-out;
+ }
+
+ .aboutmetext span:hover {
+   color: #ff4500;
+   text-decoration: underline;
+ }
+
+ .aboutmetext::before {
+   content: "\f009";
+   font-family: "Font Awesome";
+   margin-right: 10px;
+   color: #28a745;
+ }
+
+ .aboutmetext::after {
+   content: "";
+   display: block;
+   width: 50px;
+   height: 2px;
+   background-color: #007bff;
+   margin-top: 10px;
+ }
+
+ .aboutmetext::selection {
+   background-color: #007bff;
+   color: white;
+ }
+
+ @media (max-width: 768px) {
+   .aboutmetext {
+     font-size: 24px;
+   }
+ }
+
 
  .skilllist {
-   list-style: none;
-   padding: 0;
+   margin-top: 30px;
+ }
+
+ .skilllist h3 {
+   font-size: 24px;
+   margin-bottom: 15px;
  }
 
  .skilllist li {
-   margin-bottom: 10px;
+   list-style: none;
    display: flex;
    align-items: center;
-   font-size: 16px;
+   font-size: 18px;
+   margin-bottom: 12px;
+   color: #333;
+   cursor: pointer;
+   transition: transform 0.3s ease, color 0.3s ease;
  }
 
- .icon-html,
- .icon-css,
- .icon-js,
- .icon-bootstrap,
- .icon-react,
- .icon-node,
- .icon-mongodb,
- .icon-mysql {
+ .skilllist li:hover {
+   transform: translateX(5px);
+ }
+
+ /* Customize icon colors individually */
+ .skilllist .icon-html {
+   color: #e34f26;
+
+ }
+
+ .skilllist .icon-css {
+   color: #2965f1;
+
+ }
+
+ .skilllist .icon-js {
+   color: #f0db4f;
+ }
+
+ .skilllist .icon-bootstrap {
+   color: #563d7c;
+ }
+
+ .skilllist .icon-react {
+   color: #61dafb;
+ }
+
+ .skilllist .icon-node {
+   color: #8cc84b;
+ }
+
+ .skilllist .icon-mongodb {
+   color: #4db33d;
+ }
+
+ .skilllist .icon-mysql {
+   color: #4479a1;
+
+ }
+
+ .skilllist li svg {
    margin-right: 10px;
+   font-size: 24px;
+   transition: transform 0.3s ease, color 0.3s ease;
  }
 
- /* Add styles for the animation classes */
- .animated {
-   animation-fill-mode: both;
+ .skilllist li:hover svg {
+   transform: scale(1.2);
+   animation: bounce 1s infinite;
  }
 
- /* Define the bounceInLeft animation */
- @keyframes bounceInLeft {
+ @keyframes bounce {
 
    0%,
-   60%,
-   75%,
-   90%,
+   20%,
+   50%,
+   80%,
    100% {
-     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+     transform: translateY(0);
    }
 
-   0% {
-     opacity: 0;
-     transform: translate3d(-3000px, 0, 0);
+   40% {
+     transform: translateY(-20px);
    }
 
    60% {
-     opacity: 1;
-     transform: translate3d(25px, 0, 0);
-   }
-
-   75% {
-     transform: translate3d(-10px, 0, 0);
-   }
-
-   90% {
-     transform: translate3d(5px, 0, 0);
-   }
-
-   100% {
-     transform: none;
+     transform: translateY(-10px);
    }
  }
 
- /* Define the bounceInRight animation */
- @keyframes bounceInRight {
+ .webimage {
+   background-image: url('../Assets/mern.jpg');
+   background-size: cover;
+   background-position: center;
+   height: 300px;
+   border-radius: 8px;
+   transition: transform 0.3s ease;
+ }
 
-   0%,
-   60%,
-   75%,
-   90%,
-   100% {
-     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-   }
+ .webimage:hover {
+   transform: scale(1.05);
+ }
 
-   0% {
+ /* Animation */
+ @keyframes fadeInFromLeft {
+   from {
      opacity: 0;
-     transform: translate3d(3000px, 0, 0);
+     transform: translateX(-100px);
    }
 
-   60% {
+   to {
      opacity: 1;
-     transform: translate3d(-25px, 0, 0);
-   }
-
-   75% {
-     transform: translate3d(10px, 0, 0);
-   }
-
-   90% {
-     transform: translate3d(-5px, 0, 0);
-   }
-
-   100% {
-     transform: none;
+     transform: translateX(0);
    }
  }
 
+ .animated-li {
+   animation: fadeInFromLeft 800ms ease forwards;
+ }
 
+ /* Additional Animations */
+ @keyframes fadeIn {
+   from {
+     opacity: 0;
+   }
 
+   to {
+     opacity: 1;
+   }
+ }
 
-
-
-
-
+ .aboutdetails-animation {
+   animation: fadeIn 1200ms ease forwards;
+ }
