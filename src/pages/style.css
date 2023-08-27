@@ -30,7 +30,7 @@ background-color: #adf7d1;
 
 .underline {
   display: block;
-  width: 50px;
+  width: 40px;
   height: 4px;
   background-color: #007bff;
   margin-bottom: 20px;
@@ -341,7 +341,7 @@ background-color: #adf7d1;
 
  .card-card {
   padding-top: 20px;
-  padding-bottom: 50px !important;
+  padding-bottom: 40px;
   padding-left: 25px !important;
   padding-right: 25px !important;
   height: 630px !important;
@@ -430,7 +430,7 @@ background-color: #adf7d1;
 .card-title {
   font-size: 1.55rem;
 
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 
 }
 
@@ -470,7 +470,7 @@ background-color: #adf7d1;
 
 .contactbg {
   background-color: #ffd6a4;
-  padding: 190px 0;
+  padding: 200px 0;
 }
 
 
@@ -494,7 +494,7 @@ background-color: #adf7d1;
   display: block;
   margin: 0 auto;
   width: 150px;
-  height: 50px;
+  height: 40px;
   border: yellow solid 1px;
   background-color: transparent;
   letter-spacing: 2px;
@@ -655,7 +655,7 @@ span:hover {
 
  .education-section {
   background-color: #e0ffcd;
-   padding: 50px 0;
+   padding: 40px 0;
  }
 
  .timeline-element {
@@ -820,7 +820,7 @@ span:hover {
 
 
  .skilltitle {
-   margin-top: 50px;
+   margin-top: 40px;
    text-align: center;
  }
 
@@ -888,7 +888,7 @@ background: linear-gradient(88.8deg, rgb(239, 171, 245) 13.4%, rgb(196, 181, 249
  .aboutmetext::after {
    content: "";
    display: block;
-   width: 50px;
+   width: 40px;
    height: 2px;
    background-color: #007bff;
    margin-top: 10px;
@@ -911,7 +911,7 @@ background: linear-gradient(88.8deg, rgb(239, 171, 245) 13.4%, rgb(196, 181, 249
  }
 
  .skilllist h3 {
-   font-size: 24px;
+   font-size: 44px;
    margin-bottom: 15px;
  }
 
@@ -933,37 +933,53 @@ background: linear-gradient(88.8deg, rgb(239, 171, 245) 13.4%, rgb(196, 181, 249
  /* Customize icon colors individually */
  .skilllist .icon-html {
    color: #e34f26;
-
+   font-size: 40px;
  }
 
  .skilllist .icon-css {
    color: #2965f1;
+  font-size: 40px;
 
  }
 
  .skilllist .icon-js {
    color: #f0db4f;
+  font-size: 40px;
  }
 
  .skilllist .icon-bootstrap {
    color: #563d7c;
+  font-size: 40px;
  }
 
  .skilllist .icon-react {
    color: #61dafb;
+  font-size: 40px;
  }
 
  .skilllist .icon-node {
    color: #8cc84b;
+  font-size: 40px;
  }
 
  .skilllist .icon-mongodb {
    color: #4db33d;
+  font-size: 40px;
  }
 
  .skilllist .icon-mysql {
    color: #4479a1;
+  font-size: 40px;
+ }
 
+ .skilllist .icon-bsgit {
+  color: #F05032;
+  font-size: 40px;
+ }
+
+ .skilllist .icon-siexpress {
+   color: #000000;
+  font-size: 40px;
  }
 
  .skilllist li svg {

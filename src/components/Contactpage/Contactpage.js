@@ -18,8 +18,7 @@ function Contactpage() {
           Be In Touch
         </motion.h2>
         <motion.p className='contactparagraph' {...backInRightAnimation}>
-          "Need a web developer? That's me! I'm ready to help with new websites or improvements. I can design, code, and more.
-          Let's team up and make your web projects awesome!"
+          "Please feel free to drop me a line"
         </motion.p>
         <motion.button
           className='contactbtn'

@@ -2,8 +2,9 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useSpring, animated } from 'react-spring';
 import { FaHtml5, FaCss3Alt, FaJs, FaBootstrap } from 'react-icons/fa';
-import { SiReact, SiMongodb, SiMysql } from 'react-icons/si';
+import { SiReact, SiMongodb, SiMysql, SiExpress } from 'react-icons/si';
 import { DiNodejs } from 'react-icons/di';
+import { BsGit } from 'react-icons/bs';
 import '../../pages/style.css';
 
 function Aboutpage() {
@@ -42,19 +43,26 @@ function Aboutpage() {
                   <animated.li style={skillsAnimation}>
                     <FaBootstrap className='icon-bootstrap' />Bootstrap5
                   </animated.li>
-                </Col>
-                <Col md={5}>
                   <animated.li style={skillsAnimation}>
                     <SiReact className='icon-react' />React Js
                   </animated.li>
+                </Col>
+                <Col md={5}>
+                  
                   <animated.li style={skillsAnimation}>
                     <DiNodejs className='icon-node' />Node Js
+                  </animated.li>
+                  <animated.li style={skillsAnimation}>
+                    <SiExpress className='icon-express' />Express Js
                   </animated.li>
                   <animated.li style={skillsAnimation}>
                     <SiMongodb className='icon-mongodb' />Mongo DB
                   </animated.li>
                   <animated.li style={skillsAnimation}>
                     <SiMysql className='icon-mysql' />MySQL
+                  </animated.li>
+                  <animated.li style={skillsAnimation}>
+                    <BsGit className='icon-bsgit' />Git
                   </animated.li>
                 </Col>
               </Row>
