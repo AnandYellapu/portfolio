@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import '../../pages/style.css';
 import { Container } from 'react-bootstrap';
-import { GrLocationPin } from 'react-icons/gr';
 
 function Contactpage() {
   const backInRightAnimation = {
@@ -38,14 +37,13 @@ function Contactpage() {
           transition={{ duration: 1, delay: 1.5, ease: 'easeInOut' }}
         />
         <motion.p className='copyright'>
-          <GrLocationPin /> © 2023. <br />
           Built with React by{' '}
           <motion.span
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 1.7, ease: 'easeInOut' }}
           >
-            Anand
+            Anand<span className="heart-icon">&#x2665;</span>
           </motion.span>
         </motion.p>
       </Container>

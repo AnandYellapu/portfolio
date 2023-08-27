@@ -470,7 +470,7 @@ background-color: #adf7d1;
 
 .contactbg {
   background-color: #ffd6a4;
-  padding: 200px 0;
+  padding: 240px 0;
 }
 
 
@@ -538,6 +538,11 @@ background-color: #adf7d1;
   border-bottom-color: yellow;
   border-left-color: yellow;
   transition: border-color 0s ease-out 0.6s, width 0.3s ease-out 0.6s, height 0.3s ease-out 1s;
+}
+
+.heart-icon {
+  font-size: 25px;
+  color: red;
 }
 
 /* Button pulsing animation */
