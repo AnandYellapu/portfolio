@@ -13,7 +13,10 @@ const EducationItem = ({ institution, degree, year, GPA, index }) => {
 
   return (
     <VerticalTimelineElement
-      className={index % 2 === 0 ? 'left-effect' : 'right-effect'}
+      className={`${
+        index % 2 === 0 ? 'left-effect' : 'right-effect'
+      } bounce-in-with-color`}
+       contentStyle={{ background: '#e0ffcd' }}
       contentArrowClassName="vertical-timeline-element-arrow"
       date={year}
       iconStyle={{ background: iconColors[index % icons.length], color: '#fff' }}
@@ -62,3 +65,11 @@ const Education = () => {
 };
 
 export default Education;
+
+
+
+
+
+
+
+ 

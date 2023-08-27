@@ -664,8 +664,8 @@ span:hover {
  }
 
  .timeline-element {
-   background: #ffffff;
-   color: #333;
+   background: #e0ffcd;
+   /* color: #333; */
    border-radius: 8px;
    padding: 20px;
    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -701,7 +701,6 @@ span:hover {
   text-transform: uppercase;
   border-bottom: 1px solid #ddd;
   padding-bottom: 5px;
-  background-color: #f2f2f2;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
@@ -711,7 +710,7 @@ span:hover {
 }
 
 .vertical-timeline-element-title:hover {
-  background-color: #3498db;
+  background-color: #b8ffab;
   color: #fff;
 }
 
@@ -720,13 +719,16 @@ span:hover {
   position: absolute;
   width: 100%;
   height: 3px;
-  background-color: #3498db;
+  background-color: #b8ffab;
   bottom: 0;
   left: 0;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease-in-out;
 }
+
+
+
 
 .vertical-timeline-element-title:hover::after {
   transform: scaleX(1);
