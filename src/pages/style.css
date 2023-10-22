@@ -344,8 +344,97 @@ background-color: #adf7d1;
   padding-bottom: 40px;
   padding-left: 25px !important;
   padding-right: 25px !important;
-  height: 630px !important;
+  height: 680px !important;
 }
+
+
+
+/* .tech-stack {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.tech-icon {
+  margin: 0 10px;
+  font-size: 14px;
+  color: #333;
+  transition: color 0.3s ease-in-out; 
+}
+
+.tech-icon:hover {
+  color: #007bff;
+}
+
+
+.tech-icon {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.tech-icon {
+  border-radius: 20%;
+}
+
+
+.tech-icon:hover {
+  background-color: #f0f0f0;
+}
+
+
+@media (min-width: 768px) {
+  .tech-stack {
+    justify-content: flex-start;
+  }
+
+  .tech-icon {
+    font-size: 30px;
+  }
+} */
+
+
+/* Add this to your existing CSS or create a new CSS file */
+
+.tech-stack {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.tech-icon {
+  margin: 0 5px;
+  font-size: 24px; /* Adjust font size as needed */
+  color: #fff;
+  padding: 3px; /* Adjust padding as needed */
+  border-radius: 6px;
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom, #0073e6 0%, #00c3ff 100%); /* Linear gradient background */
+}
+
+.tech-icon:hover {
+  color: red;
+  transform: scale(1.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #ff7f50 0%, #ff3300 100%); /* Linear gradient background on hover */
+}
+
+
+
+
+
+/* Optional: Adjust the styles for larger screens */
+@media (min-width: 768px) {
+  .tech-stack {
+    justify-content: flex-start;
+  }
+
+  .tech-icon {
+    font-size: 28px;
+  }
+}
+
+
 
 
 .card-text {

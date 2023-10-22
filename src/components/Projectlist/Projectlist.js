@@ -6,6 +6,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import food from '../../Assets/food.png';
 import blog from '../../Assets/blog.png';
 import hotel from '../../Assets/hotel.png';
+import ebook from '../../Assets/ebook.png';
 
 function Projectlist() {
   const { scrollYProgress } = useScroll();
@@ -26,6 +27,7 @@ function Projectlist() {
                   isBlog={false}
                   title="Food Recipe"
                   description="Flavorful Eats is a delightful and user-friendly food recipe app designed to inspire both novice..."
+                  techStack="MongoDB,Express,React,NodeJS"
                   ghLink="https://kitchen-recipe-management1.netlify.app/"
                 />
               </motion.div>
@@ -37,8 +39,9 @@ function Projectlist() {
                 <ProjectCard
                   imgPath={blog}
                   isBlog={false}
-                  title="Mix"
+                  title="MixBlog"
                   description="Mix blog project is a modern and versatile platform designed for seamless content creation..."
+                  techStack="MongoDB,Express,React,NodeJS"
                   ghLink="https://mixbloog.netlify.app"
                 />
               </motion.div>
@@ -51,10 +54,25 @@ function Projectlist() {
                   isBlog={false}
                   title="Ebooking"
                   description="Ebooking project is a comprehensive solution for managing hotel reservations...."
+                  techStack="MongoDB,Express,React,NodeJS"
                   ghLink="https://eboooking.netlify.app"
                 />
               </motion.div>
             </Col>
+
+            <Col md={4} className="dash-card">
+            <motion.div style={{ opacity, x }}>
+              <ProjectCard
+                imgPath={ebook}
+                isBlog={false}
+                title="Ebook"
+                description="An Ebook Selling is an online platform designed to provide a convenient and user-friendly."
+                techStack="MongoDB,Express,React,NodeJS,Material-UI"
+                ghLink="https://eboook.netlify.app"
+              />
+            </motion.div>
+          </Col>
+
           </Row>
         </Container>
       </Container>
