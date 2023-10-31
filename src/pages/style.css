@@ -2,14 +2,20 @@
  @import 'animate.css';
 
 
- 
+ html, body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
 
  body {
-   margin: 0;
-   padding: 0;
-   background: #e74c3c;
-   font-family: 'Lato', sans-serif;
- }
+  margin: 0;
+  padding: 0;
+  background: #e74c3c;
+  font-family: 'Lato', sans-serif;
+  height: auto;
+}
+
 
 .homebg-ground {
   padding: 205px 0;
@@ -328,69 +334,22 @@ background-color: #adf7d1;
 /* Project Cards */
 
 .projectbackground {
-  
   width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, #ee9ca7 0%, #ffdde1 100%);
+  max-height: 100%;
+  background: linear-gradient(45deg, #ee9ca7 0%, #ffdde1 100%);
 }
 
 .dash-section {
   position: relative !important;
-  padding-top: 10px !important;
 }
 
  .card-card {
-  padding-top: 20px;
+  /* padding-top: 20px; */
   padding-bottom: 40px;
   padding-left: 25px !important;
   padding-right: 25px !important;
   height: 680px !important;
 }
-
-
-
-/* .tech-stack {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-}
-
-.tech-icon {
-  margin: 0 10px;
-  font-size: 14px;
-  color: #333;
-  transition: color 0.3s ease-in-out; 
-}
-
-.tech-icon:hover {
-  color: #007bff;
-}
-
-
-.tech-icon {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-
-.tech-icon {
-  border-radius: 20%;
-}
-
-
-.tech-icon:hover {
-  background-color: #f0f0f0;
-}
-
-
-@media (min-width: 768px) {
-  .tech-stack {
-    justify-content: flex-start;
-  }
-
-  .tech-icon {
-    font-size: 30px;
-  }
-} */
 
 
 /* Add this to your existing CSS or create a new CSS file */
@@ -433,9 +392,6 @@ background-color: #adf7d1;
     font-size: 28px;
   }
 }
-
-
-
 
 .card-text {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -915,7 +871,7 @@ span:hover {
  /* Aboutpage.css */
 
 
- .skilltitle {
+  .skilltitle {
    margin-top: 40px;
    text-align: center;
  }
@@ -945,7 +901,7 @@ span:hover {
 
  .aboutpagebackground {
 background: linear-gradient(88.8deg, rgb(239, 171, 245) 13.4%, rgb(196, 181, 249) 76.3%);
-  padding: 190px 0;
+  padding: 120px 0;
  }
 
  .textbackground {
@@ -1024,9 +980,9 @@ background: linear-gradient(88.8deg, rgb(239, 171, 245) 13.4%, rgb(196, 181, 249
 
  .skilllist li:hover {
    transform: translateX(5px);
- }
+ } 
 
- /* Customize icon colors individually */
+
  .skilllist .icon-html {
    color: #e34f26;
    font-size: 40px;
@@ -1152,3 +1108,7 @@ background: linear-gradient(88.8deg, rgb(239, 171, 245) 13.4%, rgb(196, 181, 249
  .aboutdetails-animation {
    animation: fadeIn 1200ms ease forwards;
  }
+
+
+
+

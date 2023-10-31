@@ -100,7 +100,7 @@ function Projectlist() {
     <div className="projectbackground">
       <Container fluid className="dash-section">
         <Container>
-          <Row style={{ justifyContent: "center", paddingBottom: "40px", marginTop: "57px" }}>
+          <Row style={{ justifyContent: "center" }}>
            
             <Col md={4} className="dash-card">
               <ProjectCard
