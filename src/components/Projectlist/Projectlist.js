@@ -94,6 +94,7 @@ import food from '../../Assets/food.png';
 import blog from '../../Assets/blog.png';
 import hotel from '../../Assets/hotel.png';
 import ebook from '../../Assets/ebook.png';
+import tic from '../../Assets/tic.png';
 
 function Projectlist() {
   return (
@@ -147,6 +148,19 @@ function Projectlist() {
                 techStack="MongoDB, Express, React, NodeJS, Material-UI"
                 netlifyLink="https://eboook.netlify.app/"
                 ghLink="https://github.com/AnandYellapu/Ebook-fe"
+              />
+            </Col>
+
+
+            <Col md={4} className="dash-card">
+              <ProjectCard
+                imgPath={tic}
+                isBlog={false}
+                title="Tic-Tac-Toe"
+                description="This project showcases a modern and interactive Tic-Tac-Toe game built using MERN."
+                techStack="MongoDB, Express, React, NodeJS, Material-UI"
+                netlifyLink="https://game12-tic-tac-toe.netlify.app/"
+                ghLink="https://github.com/AnandYellapu/tic-tac-toe-client"
               />
             </Col>
 
