@@ -95,6 +95,7 @@ import blog from '../../Assets/blog.png';
 import hotel from '../../Assets/hotel.png';
 import ebook from '../../Assets/ebook.png';
 import tic from '../../Assets/tic.png';
+import note from '../../Assets/note.png';
 
 function Projectlist() {
   return (
@@ -161,6 +162,18 @@ function Projectlist() {
                 techStack="MongoDB, Express, React, NodeJS, Material-UI"
                 netlifyLink="https://game12-tic-tac-toe.netlify.app/"
                 ghLink="https://github.com/AnandYellapu/tic-tac-toe-client"
+              />
+            </Col>
+
+            <Col md={4} className="dash-card">
+              <ProjectCard
+                imgPath={note}
+                isBlog={false}
+                title="Note Maker"
+                description="Note Maker is your go-to platform for creating and managing notes effortlessly built using MERN."
+                techStack="MongoDB, Express, React, NodeJS, Material-UI"
+                netlifyLink="https://notes-maker12.netlify.app/"
+                ghLink="https://github.com/AnandYellapu/Note-fe"
               />
             </Col>
 
