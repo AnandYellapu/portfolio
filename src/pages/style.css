@@ -1110,3 +1110,55 @@ background: linear-gradient(88.8deg, rgb(239, 171, 245) 13.4%, rgb(196, 181, 249
 
 
 
+
+/* .typography {
+  flex-grow: 1;
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  color: salmon;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; 
+} */
+
+
+
+.typography {
+  flex-grow: 1;
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 5px;
+  color: #ff6f61;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.typography:hover {
+  transform: translateY(-2px) rotateX(10deg) rotateY(10deg);
+}
+
+.typography::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+  transform: translateZ(-20px);
+}
+
+.typography:hover::before {
+  opacity: 0.2;
+}
