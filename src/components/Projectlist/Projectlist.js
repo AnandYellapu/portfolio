@@ -96,6 +96,7 @@ import hotel from '../../Assets/hotel.png';
 import ebook from '../../Assets/ebook.png';
 import tic from '../../Assets/tic.png';
 import note from '../../Assets/note.png';
+import lms from '../../Assets/lms.png';
 
 function Projectlist() {
   return (
@@ -174,6 +175,19 @@ function Projectlist() {
                 techStack="MongoDB, Express, React, NodeJS, Material-UI"
                 netlifyLink="https://notes-maker12.netlify.app/"
                 ghLink="https://github.com/AnandYellapu/Note-fe"
+              />
+            </Col>
+
+
+            <Col md={4} className="dash-card">
+              <ProjectCard
+                imgPath={lms}
+                isBlog={false}
+                title="Leave Management System"
+                description="Leave Management System is a software solution designed to managing employee leaves using MERN."
+                techStack="MongoDB, Express, React, NodeJS, Material-UI"
+                netlifyLink="https://leave-management-systm.netlify.app/"
+                ghLink="https://github.com/AnandYellapu/LMS-FE"
               />
             </Col>
 

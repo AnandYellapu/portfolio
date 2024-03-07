@@ -88,7 +88,6 @@ import InfoIcon from '@mui/icons-material/Info';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 import SchoolIcon from '@mui/icons-material/School';
 import DescriptionIcon from '@mui/icons-material/Description';
-import { AiOutlineHeart } from 'react-icons/ai';
 
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -147,7 +146,7 @@ const Header = () => {
             </IconButton>
           )}
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} className="typography">
-          <AiOutlineHeart />ANAND  
+          ANAND  
           </Typography>
           {!isResponsive && (
             <>
