@@ -97,6 +97,7 @@ import ebook from '../../Assets/ebook.png';
 import tic from '../../Assets/tic.png';
 import note from '../../Assets/note.png';
 import lms from '../../Assets/lms.png';
+import url from '../../Assets/url.png';
 
 function Projectlist() {
   return (
@@ -184,10 +185,22 @@ function Projectlist() {
                 imgPath={lms}
                 isBlog={false}
                 title="Leave Management System"
-                description="Leave Management System is a software solution designed to managing employee leaves using MERN."
+                description="Leave Management System is a software solution designed to managing employee leaves created using MERN."
                 techStack="MongoDB, Express, React, NodeJS, Material-UI"
                 netlifyLink="https://leave-management-systm.netlify.app/"
                 ghLink="https://github.com/AnandYellapu/LMS-FE"
+              />
+            </Col>
+
+            <Col md={4} className="dash-card">
+              <ProjectCard
+                imgPath={url}
+                isBlog={false}
+                title="URL Shortener"
+                description="URL Shortener is used to create Long URL into Short URL which is created using MERN."
+                techStack="MongoDB, Express, React, NodeJS, Material-UI"
+                netlifyLink="https://url-shorteneer.netlify.app/"
+                ghLink="https://github.com/AnandYellapu/url-fe"
               />
             </Col>
 
