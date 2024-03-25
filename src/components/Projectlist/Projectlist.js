@@ -112,7 +112,7 @@ function Projectlist() {
                 isBlog={false}
                 title="Food Recipe"
                 description="Flavorful Eats is a delightful and user-friendly food recipe app designed to inspire both novice..."
-                techStack="MongoDB, Express, React, NodeJS"
+                techStack="MongoDB, Express, React, NodeJS, Material-UI"
                 netlifyLink="https://kitchen-recipe-management1.netlify.app/"
                 ghLink="https://github.com/AnandYellapu/kitchen-recipe-frontend"
               />
@@ -124,7 +124,7 @@ function Projectlist() {
                 isBlog={false}
                 title="MixBlog"
                 description="Mix blog project is a modern and versatile platform designed for seamless content creation..."
-                techStack="MongoDB, Express, React, NodeJS"
+                techStack="MongoDB, Express, React, NodeJS, Material-UI"
                 netlifyLink="https://mixbloog.netlify.app/"
                 ghLink="https://github.com/AnandYellapu/blog-fe"
               />
@@ -136,7 +136,7 @@ function Projectlist() {
                 isBlog={false}
                 title="Ebooking"
                 description="Ebooking project is a comprehensive solution for managing hotel reservations...."
-                techStack="MongoDB, Express, React, NodeJS"
+                techStack="MongoDB, Express, React, NodeJS, Material-UI"
                 netlifyLink="https://eboooking.netlify.app/"
                 ghLink="https://github.com/AnandYellapu/Ebooking-fe"
               />
