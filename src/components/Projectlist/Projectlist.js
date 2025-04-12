@@ -185,7 +185,7 @@ function Projectlist() {
                 imgPath={lms}
                 isBlog={false}
                 title="Leave Management System"
-                description="Leave Management System is a software solution designed to managing employee leaves created using MERN."
+                description="LMS is a software designed to managing employee leaves created using MERN."
                 techStack="MongoDB, Express, React, NodeJS, Material-UI"
                 netlifyLink="https://leave-management-systm.netlify.app/"
                 ghLink="https://github.com/AnandYellapu/LMS-FE"
