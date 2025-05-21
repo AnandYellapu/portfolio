@@ -162,14 +162,14 @@ function Home() {
                 <FaLinkedinIn className='icon linkedin-color' />
               </button>
             </div>
-            <button
-              className='view-resume-button'
-              onClick={() => {
-                window.open(googleDriveResumeLink);
-              }}
-            >
-              View My Resume
-            </button>
+            // <button
+            //   className='view-resume-button'
+            //   onClick={() => {
+            //     window.open(googleDriveResumeLink);
+            //   }}
+            // >
+            //   View My Resume
+            // </button>
           </Col>
           <Col md={5}>
             <div className='imagedeveloper'></div>
