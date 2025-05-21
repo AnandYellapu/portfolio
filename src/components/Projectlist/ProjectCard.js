@@ -61,7 +61,7 @@
 //               href={props.ghLink}
 //               target="_blank"
 //             >
-//               View
+//               Link
 //             </Button>
 //           </div>
 //         </Card.Body>
@@ -138,7 +138,7 @@ function ProjectCard(props) {
               href={props.netlifyLink}
               target="_blank"
             >
-              View
+              Link
             </Button>
             <Button
               className="btn p-200 m-9 h-5 w-100 ml-5" // Add margin to create a small gap
