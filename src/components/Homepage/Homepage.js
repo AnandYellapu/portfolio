@@ -129,8 +129,7 @@ import { FaLinkedinIn } from 'react-icons/fa';
 import 'animate.css';
 
 function Home() {
-  const googleDriveResumeLink =
-    'https://drive.google.com/file/d/1DDQyt8NPvm9krlI6Q1UrYOb3MAvFj3Mx/view';
+  const googleDriveResumeLink = 'https://drive.google.com/file/d/1DDQyt8NPvm9krlI6Q1UrYOb3MAvFj3Mx/view';  //eslint-disable-line
 
   return (
     <div className='homebg-ground animate__animated animate__zoomIn'>
@@ -162,14 +161,14 @@ function Home() {
                 <FaLinkedinIn className='icon linkedin-color' />
               </button>
             </div>
-            <button
+            {/* <button
               className='view-resume-button'
               onClick={() => {
                 window.open(googleDriveResumeLink);
               }}
             >
               View My Resume
-            </button>
+            </button> */}
           </Col>
           <Col md={5}>
             <div className='imagedeveloper'></div>

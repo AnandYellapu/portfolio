@@ -36,7 +36,7 @@ const Education = () => {
     {
       institution: 'Aditya College Of Engineering',
       degree: 'Bachelor Of Computer Science-(B.Tech)',
-      year: '2020',
+      year: '2023',
       GPA: '6.3',
     },
     {
