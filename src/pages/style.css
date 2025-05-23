@@ -275,7 +275,6 @@ background-color: #adf7d1;
 }
 
 .sticky {
- /* background-color: white !important; */
  opacity: 0.9;
 }
 
@@ -332,7 +331,6 @@ background-color: #adf7d1;
 }
 
 /* Project Cards */
-
 .projectbackground {
  width: 100%;
  max-height: 100%;
@@ -344,7 +342,6 @@ background-color: #adf7d1;
 }
 
 .card-card {
- /* padding-top: 20px; */
  padding-bottom: 40px;
  padding-left: 25px !important;
  padding-right: 25px !important;
@@ -404,21 +401,22 @@ background-color: #adf7d1;
  background-color: transparent !important;
  border: transparent;
  opacity: 0.9 !important;
- transition: all 0.5s ease 0s !important;
+ /* transition: all 0.5s ease 0s !important; */
  height: 100% !important;
  border-radius: 15px;
 }
 
 .card-card-view:hover {
- transform: scale(1.02) !important;
- overflow: hidden !important;
- box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-   rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px !important;
+  /* transform: scale(1.02) !important; */  /* This is fine, it's just a scale */
+  overflow: hidden !important;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+              rgba(17, 17, 26, 0.1) 0px 8px 24px,
+              rgba(17, 17, 26, 0.1) 0px 16px 56px !important;
 }
 
 .card-img-top {
  padding: 20px !important;
- opacity: 0.8 !important;
+ /* opacity: 0.8 !important; */
  border-radius: 10px !important;
 }
 
@@ -677,7 +675,6 @@ span {
 /* Hover effect for @Anand */
 span:hover {
  color: #007bff;
- /* Blue color on hover */
  cursor: pointer;
  transition: color 0.3s ease;
 }
@@ -710,7 +707,6 @@ span:hover {
 
 .timeline-element {
   background: #e0ffcd;
-  /* color: #333; */
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -1107,22 +1103,6 @@ background: linear-gradient(88.8deg, rgb(239, 171, 245) 13.4%, rgb(196, 181, 249
 .aboutdetails-animation {
   animation: fadeIn 1200ms ease forwards;
 }
-
-
-
-
-/* .typography {
-  flex-grow: 1;
-  font-family: Arial, sans-serif;
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 10px;
-  border-radius: 5px;
-  color: salmon;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative; 
-} */
-
 
 
 .typography {
